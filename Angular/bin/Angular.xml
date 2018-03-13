@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Angular</name>
+    </assembly>
+    <members>
+        <member name="T:Angular.Api.AccountController">
+            <summary>
+            Account manager
+            </summary>
+        </member>
+        <member name="M:Angular.Api.AccountController.GetAll">
+            <summary>
+            Get list of Acount
+            </summary>
+            <returns>return List(Account)</returns>
+        </member>
+        <member name="M:Angular.Api.AccountController.GetId(System.Int32)">
+            <summary>
+            Get Account by Id
+            </summary>
+            <param name="id">Account Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Api.AccountController.Add(ICB.Business.Models.Account)">
+            <summary>
+            Add new account
+            </summary>
+            <param name="account">account model</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Api.AccountController.Edit(System.Int32,ICB.Business.Models.Account)">
+            <summary>
+            Update account
+            </summary>
+            <param name="id">account id</param>
+            <param name="account">account model</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Api.AccountController.Delete(System.Int32)">
+            <summary>
+            delete account
+            </summary>
+            <param name="id">account id</param>
+            <returns></returns>
+        </member>
+        <member name="T:Angular.Api.CustomerController">
+            <summary>
+            Customer
+            </summary>
+        </member>
+        <member name="M:Angular.Api.CustomerController.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Api.CustomerController.GetId(System.Int32)">
+            <summary>
+            Get Customer by Id
+            </summary>
+            <param name="id">Customer Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Api.CustomerController.Add(ICB.Business.Models.Customer)">
+            <summary>
+            Add new Customer
+            </summary>
+            <param name="customer">Customer model</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Api.CustomerController.Edit(System.Int32,ICB.Business.Models.Customer)">
+            <summary>
+            Update Customer
+            </summary>
+            <param name="id">Customer id</param>
+            <param name="customer">Customer model</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Api.CustomerController.Delete(System.Int32)">
+            <summary>
+            delete Customer
+            </summary>
+            <param name="id">Customer id</param>
+            <returns></returns>
+        </member>
+        <member name="T:Angular.Startup">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Angular.Startup.OAuthOptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Angular.Startup.PublicClientId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Angular.Startup.ConfigureAuth(Owin.IAppBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:Angular.Startup.Configuration(Owin.IAppBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:Angular.WebApiConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Angular.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:Angular.Authentication.AppAuthorizeAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Angular.Authentication.AppAuthorizeAttribute.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Angular.Authentication.AppAuthorizeAttribute.#ctor(System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="roles"></param>
+        </member>
+        <member name="M:Angular.Authentication.AppAuthorizeAttribute.#ctor(System.Int32,System.Int32,System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="module"></param>
+            <param name="action"></param>
+            <param name="roles"></param>
+        </member>
+        <member name="M:Angular.Authentication.AppAuthorizeAttribute.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+        <member name="M:Angular.Authentication.AppAuthorizeAttribute.AccessToAction(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Angular.Authentication.ApplicationOAuthProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Angular.Authentication.ApplicationOAuthProvider.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="publicClientId"></param>
+        </member>
+        <member name="M:Angular.Authentication.ApplicationOAuthProvider.GrantResourceOwnerCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Angular.Authentication.ApplicationOAuthProvider.TokenEndpoint(Microsoft.Owin.Security.OAuth.OAuthTokenEndpointContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Authentication.ApplicationOAuthProvider.ValidateClientAuthentication(Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Authentication.ApplicationOAuthProvider.ValidateClientRedirectUri(Microsoft.Owin.Security.OAuth.OAuthValidateClientRedirectUriContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Authentication.ApplicationOAuthProvider.CreateProperties(System.String,System.String,System.Byte)">
+            <summary>
+            
+            </summary>
+            <param name="userName"></param>
+            <param name="fullname"></param>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Angular.Authentication.MessageString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Authentication.MessageString.AUTH_ACCESSDENIED">
+            <summary>
+            Từ chối truy cập vào Module
+            </summary>
+        </member>
+        <member name="F:Angular.Authentication.MessageString.AUTH_METHODDENIED">
+            <summary>
+            Từ chối truy cập vào Action
+            </summary>
+        </member>
+        <member name="T:Angular.Controllers.ConfigController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Angular.Controllers.ConfigController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Angular.Controllers.NewsController">
+            <summary>
+            News manager
+            </summary>
+        </member>
+        <member name="M:Angular.Controllers.NewsController.GetAll">
+            <summary>
+            Get all news
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Controllers.NewsController.Get(System.Int32)">
+            <summary>
+            Get single news
+            </summary>
+            <param name="id">id news</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Controllers.NewsController.Add(ICB.Business.Models.News)">
+            <summary>
+            create news
+            </summary>
+            <param name="model">News model</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Controllers.NewsController.Edit(System.Int32,ICB.Business.Models.News)">
+            <summary>
+            Update news
+            </summary>
+            <param name="id">id news</param>
+            <param name="model">News model</param>
+            <returns></returns>
+        </member>
+        <member name="M:Angular.Controllers.NewsController.Delete(System.Int32)">
+            <summary>
+            Delete news
+            </summary>
+            <param name="id">id new</param>
+            <returns></returns>
+        </member>
+        <member name="T:Angular.Models.AppModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Angular.Models.AppModule.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Angular.Models.AppModule.Description">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Angular.Models.AppModule.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Angular.Models.ModuleType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.ModuleType.AccountModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.ModuleType.CustomerModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.ModuleType.NewsModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Angular.Models.ActionType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.ActionType.Addition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.ActionType.Edit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.ActionType.Delete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.ActionType.View">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.ActionType.CanActive">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Angular.Models.RoleCollection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.RoleCollection.Superadmin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.RoleCollection.Admin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.RoleCollection.Manager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.RoleCollection.Writer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Angular.Models.RoleCollection.Guest">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
